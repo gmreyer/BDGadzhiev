@@ -42,47 +42,52 @@ namespace AgilCourse
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("PT Sans Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(10, 205);
+            this.label1.Location = new System.Drawing.Point(13, 252);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 27);
+            this.label1.Size = new System.Drawing.Size(85, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login";
             // 
             // loginTB
             // 
-            this.loginTB.Location = new System.Drawing.Point(96, 208);
+            this.loginTB.Location = new System.Drawing.Point(128, 256);
+            this.loginTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginTB.Name = "loginTB";
-            this.loginTB.Size = new System.Drawing.Size(96, 20);
+            this.loginTB.Size = new System.Drawing.Size(127, 22);
             this.loginTB.TabIndex = 2;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(96, 239);
+            this.passwordTB.Location = new System.Drawing.Point(128, 294);
+            this.passwordTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
-            this.passwordTB.Size = new System.Drawing.Size(96, 20);
+            this.passwordTB.Size = new System.Drawing.Size(127, 22);
             this.passwordTB.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("PT Sans Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(10, 232);
+            this.label2.Location = new System.Drawing.Point(13, 286);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 27);
+            this.label2.Size = new System.Drawing.Size(142, 31);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
             // login
             // 
             this.login.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.login.Font = new System.Drawing.Font("PT Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.login.Location = new System.Drawing.Point(54, 262);
+            this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.login.Location = new System.Drawing.Point(72, 322);
+            this.login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(93, 46);
+            this.login.Size = new System.Drawing.Size(124, 57);
             this.login.TabIndex = 5;
             this.login.Text = "Login";
             this.login.UseVisualStyleBackColor = false;
@@ -90,15 +95,16 @@ namespace AgilCourse
             // 
             // connection
             // 
-            this.connection.ConnectionString = "Provider=SQLNCLI11;Data Source=\"tcp: ANASTEP, 49172\";Persist Security Info=True;P" +
-    "assword=1234;User ID=gmreyer;Initial Catalog=TobaccoFact";
+            this.connection.ConnectionString = "Provider=SQLNCLIRDA11;Data Source=DESKTOP-RV3VNED;Integrated Security=SSPI;Initia" +
+    "l Catalog=TobaccoFact";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AgilCourse.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 194);
+            this.pictureBox1.Size = new System.Drawing.Size(248, 239);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -106,16 +112,17 @@ namespace AgilCourse
             // Authentication
             // 
             this.AcceptButton = this.login;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
-            this.ClientSize = new System.Drawing.Size(207, 311);
+            this.ClientSize = new System.Drawing.Size(276, 383);
             this.Controls.Add(this.login);
             this.Controls.Add(this.passwordTB);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.loginTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Authentication";
             this.Text = "Authentication";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

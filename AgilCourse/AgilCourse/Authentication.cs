@@ -27,6 +27,7 @@ namespace AgilCourse
             catch (Exception)
             {
                 MessageBox.Show("Connected failed!", "Connection", MessageBoxButtons.OK);
+                return;
             }
 
             if (loginTB.Text == "" || passwordTB.Text == "")
