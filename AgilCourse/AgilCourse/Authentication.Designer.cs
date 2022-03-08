@@ -42,19 +42,19 @@ namespace AgilCourse
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(13, 252);
+            this.label1.Location = new System.Drawing.Point(13, 256);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 31);
+            this.label1.Size = new System.Drawing.Size(71, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login";
             // 
             // loginTB
             // 
             this.loginTB.Location = new System.Drawing.Point(128, 256);
-            this.loginTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.loginTB.Margin = new System.Windows.Forms.Padding(4);
             this.loginTB.Name = "loginTB";
             this.loginTB.Size = new System.Drawing.Size(127, 22);
             this.loginTB.TabIndex = 2;
@@ -62,7 +62,7 @@ namespace AgilCourse
             // passwordTB
             // 
             this.passwordTB.Location = new System.Drawing.Point(128, 294);
-            this.passwordTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordTB.Margin = new System.Windows.Forms.Padding(4);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
             this.passwordTB.Size = new System.Drawing.Size(127, 22);
@@ -71,25 +71,25 @@ namespace AgilCourse
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(13, 286);
+            this.label2.Location = new System.Drawing.Point(8, 292);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 31);
+            this.label2.Size = new System.Drawing.Size(112, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
             // login
             // 
             this.login.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.login.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.login.Location = new System.Drawing.Point(72, 322);
-            this.login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login.Font = new System.Drawing.Font("Trebuchet MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.login.Location = new System.Drawing.Point(72, 324);
+            this.login.Margin = new System.Windows.Forms.Padding(4);
             this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(124, 57);
+            this.login.Size = new System.Drawing.Size(124, 46);
             this.login.TabIndex = 5;
-            this.login.Text = "Login";
+            this.login.Text = "Sign In";
             this.login.UseVisualStyleBackColor = false;
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
@@ -102,7 +102,7 @@ namespace AgilCourse
             // 
             this.pictureBox1.Image = global::AgilCourse.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(13, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 239);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,7 +122,7 @@ namespace AgilCourse
             this.Controls.Add(this.loginTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Authentication";
             this.Text = "Authentication";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

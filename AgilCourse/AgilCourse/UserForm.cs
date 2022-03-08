@@ -37,7 +37,7 @@ namespace AgilCourse
                     break;
 
                 case 2:
-                    ProductManagerForm PMForm = new ProductManagerForm();
+                    ProductManagerForm PMForm = new ProductManagerForm(connection_);
                     initForm(PMForm);
 
                     Point location = new Point(0, 160);
