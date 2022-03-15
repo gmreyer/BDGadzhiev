@@ -28,7 +28,7 @@ namespace AgilCourse
             {
                 case 0:
                 case 1:
-                    LogisticManagerForm LMForm = new LogisticManagerForm();
+                    LogisticManagerForm LMForm = new LogisticManagerForm(connection_, user);
                     initForm(LMForm);
                     LMForm.Location = new Point(0, 160);
 
@@ -37,7 +37,7 @@ namespace AgilCourse
                     break;
 
                 case 2:
-                    ProductManagerForm PMForm = new ProductManagerForm(connection_);
+                    ProductManagerForm PMForm = new ProductManagerForm(connection_, user);
                     initForm(PMForm);
 
                     Point location = new Point(0, 160);

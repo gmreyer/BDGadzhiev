@@ -13,11 +13,13 @@ namespace AgilCourse
 {
     public partial class ProductManagerForm : Form
     {
-        private OleDbConnection connection_; 
-        public ProductManagerForm(OleDbConnection connection)
+        private OleDbConnection connection_;
+        private User user_;
+        public ProductManagerForm(OleDbConnection connection, User user)
         {
             InitializeComponent();
             connection_ = connection;
+            user_ = user;
         }
 
         private void ProductTable_Click(object sender, EventArgs e)

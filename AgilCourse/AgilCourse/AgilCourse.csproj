@@ -87,6 +87,12 @@
     <Compile Include="AddBrandForm.Designer.cs">
       <DependentUpon>AddBrandForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddMarketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarketForm.Designer.cs">
+      <DependentUpon>AddMarketForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,18 @@
     </Compile>
     <Compile Include="Authentication.Designer.cs">
       <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateOrderForm.Designer.cs">
+      <DependentUpon>CreateOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRqstForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRqstForm.Designer.cs">
+      <DependentUpon>CreateRqstForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LogisticManagerForm.cs">
       <SubType>Form</SubType>
@@ -150,6 +168,9 @@
     <EmbeddedResource Include="AddBrandForm.resx">
       <DependentUpon>AddBrandForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddMarketForm.resx">
+      <DependentUpon>AddMarketForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddProductForm.resx">
       <DependentUpon>AddProductForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authentication.resx">
       <DependentUpon>Authentication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOrderForm.resx">
+      <DependentUpon>CreateOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRqstForm.resx">
+      <DependentUpon>CreateRqstForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogisticManagerForm.resx">
       <DependentUpon>LogisticManagerForm.cs</DependentUpon>
