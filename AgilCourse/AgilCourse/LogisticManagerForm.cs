@@ -55,7 +55,9 @@ namespace AgilCourse
 
         private void createProductOrderBT_Click(object sender, EventArgs e)
         {
-
+            CreateRqstForm form = new CreateRqstForm(connection_);
+            form.MdiParent = this.MdiParent;
+            form.Show();
         }
 
         private void addMarketBT_Click(object sender, EventArgs e)

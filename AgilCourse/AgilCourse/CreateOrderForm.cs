@@ -61,14 +61,14 @@ namespace AgilCourse
         {
             if (marketsList.SelectedItems.Count == 0 || productsList.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Выберите запрос", "Ошибка", MessageBoxButtons.OK);
+                MessageBox.Show("Выберите продукт и магазин", "Ошибка", MessageBoxButtons.OK);
                 return;
             }
 
             OleDbCommand cmd = new OleDbCommand("CreateOrder", connection_);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@id_product", products.ElementAt<KeyValuePair<int, string>>(productsList.SelectedIndex).Key);
-            cmd.Parameters.AddWithValue("@id_market", markets.ElementAt<KeyValuePair<int, string>>(productsList.SelectedIndex).Key);
+            cmd.Parameters.AddWithValue("@id_market", markets.ElementAt<KeyValuePair<int, string>>(marketsList.SelectedIndex).Key);
             cmd.Parameters.AddWithValue("@id_worker", user_.id_worker_);
 
             if (cmd.ExecuteNonQuery() <= 0)
